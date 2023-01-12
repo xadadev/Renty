@@ -432,6 +432,22 @@ f: {
 	}
 }}
 window.onload = form.f.init.register
+
+
+
+<!-- ----------- BLUR JS ----------- -->
+// this will toggle the class .blur-bg to .hero class once the check box is checked
+
+var checkbox = document.getElementById("menuToggle").querySelector("input[type='checkbox']");
+  checkbox.addEventListener("change", function(){
+    var hero = document.querySelector(".hero");
+    if(checkbox.checked){
+      hero.classList.add("blur-bg");
+    }else{
+      hero.classList.remove("blur-bg");
+    }
+  });
+    
     </script>
   </body>
 </html>

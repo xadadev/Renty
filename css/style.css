@@ -922,10 +922,25 @@ label.field.focused .psuedo_select ul {
     font-size: 22px;
   }
 
-  /*
-  * And let's slide it in from the left
-  */
-  #menuToggle input:checked ~ ul {
+/* blur the hero class once checked box is :checked */
+  .blur-bg{
+     filter: blur(20px);
+     -webkit-filter: blur(20px);
+     transition:1.5s ;
+     -webkit-transition:1.5s ;
+     -moz-transition:1.5s ;
+     -ms-transition:1.5s ;
+     -o-transition:1.5s ;
+}
+
+  /* And let's slide it in from the left */
+  #menuToggle input:checked ~ ul  {
     transform: none;
-  }
+    filter: blur(0);
+  -webkit-filter: blur(0);
+
+}
+
+
+
 }
