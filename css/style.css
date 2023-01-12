@@ -1,0 +1,931 @@
+/* 
+
+Website: Renty - Real Estate landing page
+Author: Muhammad wahab aka XADA
+Url:https://xada.netlify.app
+File Description : Main css file
+ 
+=================================================
+Table of Contents
+=================================================
+1. Reset
+2. Root
+    2.1 font-size
+    2.2 color
+    2.3 spacing
+3. fonts
+4. Hero 
+    4.1 SEARCH LABEL
+5. Header
+
+
+
+
+ */
+/* ---------------------------------- */
+/*               1.REST               */
+/* ---------------------------------- */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+  background-color: transparent;
+  color: #fff;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  border: none;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+  display: none;
+}
+
+/* --- custom styles removal ----- */
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+select,
+select:focus,
+select:active {
+  border: none;
+}
+
+/* ---------------------------------- */
+/*              2.ROOT                */
+/* ---------------------------------- */
+:root {
+  /* --- font-size --- */
+  --font-1: clamp(2.75rem, calc(2.36rem + 1.96vw), 4.13rem);
+  --font-2: clamp(2.25rem, calc(2.04rem + 1.07vw), 3rem);
+  --font-3: clamp(1.13rem, calc(1.02rem + 0.54vw), 1.5rem);
+  /* --- spacing --- */
+  --space-0: clamp(1rem, calc(0.86rem + 0.71vw), 1.5rem);
+  --space-1: clamp(1.5rem, calc(1.29rem + 1.07vw), 2.25rem);
+  --space-2: clamp(2rem, calc(1.71rem + 1.43vw), 3rem);
+  --space-3: clamp(2.5rem, calc(2.14rem + 1.79vw), 3.75rem);
+  --space-4: clamp(3rem, calc(2.57rem + 2.14vw), 4.5rem);
+  --space-5: clamp(3.5rem, calc(3rem + 2.5vw), 5.25rem);
+  --space-6: clamp(4rem, calc(3.43rem + 2.86vw), 6rem);
+  --space-7: clamp(4.5rem, calc(3.86rem + 3.21vw), 6.75rem);
+  --space-8: clamp(5rem, calc(4.29rem + 3.57vw), 7.5rem);
+  --space-9: clamp(5.5rem, calc(4.71rem + 3.93vw), 8.25rem);
+  --space-10: clamp(6rem, calc(5.14rem + 4.29vw), 9rem);
+  --space-11: clamp(6.5rem, calc(5.57rem + 4.64vw), 9.75rem);
+  --space-12: clamp(7rem, calc(6rem + 5vw), 10.5rem);
+  --space-13: clamp(7.5rem, calc(6.43rem + 5.36vw), 11.25rem);
+  --space-14: clamp(8rem, calc(6.86rem + 5.71vw), 12rem);
+  --space-15: clamp(8.5rem, calc(7.29rem + 6.07vw), 12.75rem);
+  --space-16: clamp(9rem, calc(7.71rem + 6.43vw), 13.5rem);
+  --space-17: clamp(9.5rem, calc(8.14rem + 6.79vw), 14.25rem);
+  --space-18: clamp(10rem, calc(8.57rem + 7.14vw), 15rem);
+  --step-0: clamp(2.25rem, calc(1.82rem + 2.14vw), 3.75rem);
+  --step-1: clamp(1.63rem, calc(1.34rem + 1.43vw), 2.63rem);
+  /* -------- color ------ */
+  --color-green: #1fab71;
+  --color-blue: #4573fd;
+  --color-black: #161617;
+  --shade-black-1: #1f2022;
+  --shade-black-2: #2d2d2f;
+  --color-grey: #808080;
+  --shade-grey-1: #969696;
+  -shade-grey-2: #d0d0d1;
+}
+
+
+/* ---------------------------------- */
+/*             3. FONTS               */
+/* ---------------------------------- */
+
+h1{
+    font-size: var(--font-1);
+
+}
+
+h2{
+    font-size: var(--font-2);
+}
+
+
+h3{
+    font-size: var(--font-3);
+}
+
+/* ---------------------------------- */
+/*               4.HERO                */
+/* ---------------------------------- */
+
+#hero {
+  background-color: var(--color-black);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr) );
+    gap: var(--space-1);
+    padding: var(--space-1) 0 var(--space-8);
+    align-items: center;
+
+}
+
+
+.hero--img{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.hero--img img{
+    width: 75%;
+    height: auto;
+}
+
+.hero--content{
+    display: grid;
+}
+
+
+.hero--content h1{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.hero--content p{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--shade-grey-1);
+}
+
+
+.hero--content h2{
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  gap: 1rem;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+    border-radius: 12px;
+}
+.search img{
+
+    padding: 5px;
+    border-radius: 14px;
+    border: 1px solid #D0D0D1;
+}
+
+
+/* ---------------------------------- */
+/*        4.1 SEARCH LABEL            */
+/* ---------------------------------- */
+
+
+
+* {
+  transition-duration: 0.2s;
+  transition-property: none;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+label.field {
+  padding: 0.2rem 0.4rem;;
+  opacity: 0;
+  position: relative;
+  transition-property: opacity;
+  z-index: 1;
+}
+label.field span {
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  left: 9px;
+  pointer-events: none;
+  position: absolute;
+  top: 1.875rem;
+  transform: scale(1) translateY(0);
+  transition-property: color, font-size, top;
+  z-index: 1;
+}
+label.field span.required,label.field .psuedo_select::after {
+  color: inherit;
+  content: "*";
+  display: block;
+  height: 20px;
+  left: -20px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 20px;
+  transform: translatey(-26px);
+}
+.error label.field span {
+  color: #F02318;
+}
+label.field .psuedo_select {
+  background: rgba(255, 255, 255, 0);
+    position: relative;
+    border-color: #666;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    margin: 24px 0 0 0;
+    min-width: 50px;
+    padding-top: 24px;
+    outline: 0;
+    z-index: 1;
+}
+label.field .psuedo_select::after {
+  background: url(""), no-repeat;
+  content: "\2039";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-property: background;
+  transform: rotate(271deg);
+}
+label.field .psuedo_select .selected {
+  height: 24px;
+  left: 1px;
+  line-height: 24px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(24px);
+  transition-property: opacity, transform;
+  will-change: transform;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: 500;
+}
+label.field .psuedo_select ul {
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  display: block;
+  height: 0;
+  list-style: none;
+  margin-top: 2px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1px;
+  pointer-events: none;
+  transition-property: height, opacity;
+  width: 100%;
+  z-index: 2;
+}
+label.field .psuedo_select ul li {
+  height: 32px;
+  padding: 8px 4px;
+}
+label.field .deselect {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+label.field.focused {
+  color: #007BED;
+}
+label.field.focused .psuedo_select {
+  border-color: #007BED;
+}
+label.field.focused .psuedo_select::after {
+  background: url("data:image/svg+xml;utf8,<svg fill='#007BED' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+}
+label.field.focused .psuedo_select ul {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+/* --------------- END -------------- */
+.search--btn{
+  padding: 1rem 1.5rem;
+  background-color: var(--color-green);
+  color: #fff;
+  border-radius: 12px;
+
+}
+
+
+
+
+
+
+
+.hero--achive{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-0);
+}
+
+
+/* ---------------------------------- */
+/*             5.HEADER               */
+/* ---------------------------------- */
+
+
+.nav--ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2.5rem;
+  padding: 1.8rem 0 1.8rem;
+}
+.nav--ul a:nth-child(4){
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav--link{
+    color:#fff;
+}
+
+.brand {
+  display: none;
+}
+
+#menuToggle input {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/*             MEDIA QUIRE            */
+/* ---------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUIRE FOR MOBILE MENU -- */
+@media (max-width: 900px) {
+  #menuToggle {
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+
+
+  .nav--link:hover {
+    color: var(--color-green);
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+  * Just a quick hamburger
+  */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .header{
+    padding: var(--space-2);
+  }
+
+  .header,
+  .main--nav {
+    display: flex;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    /* position: absolute;
+    left: 165%;
+    top: -4.2rem */
+    display: none;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+  }
+
+  /*
+  * But let's hide the middle one.
+  */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+  * Ohyeah and the last one should go the other direction
+  */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+  #menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 25rem;
+    margin: 1.8rem 0 0 -7.188rem;
+    padding: 4rem 2rem 4rem 2rem;
+    background-color: var(--color-black);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
+  * And let's slide it in from the left
+  */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+}
