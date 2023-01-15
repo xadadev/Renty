@@ -432,6 +432,7 @@ select:active {
   --font-1: clamp(2.75rem, calc(2.36rem + 1.96vw), 4.13rem);
   --font-2: clamp(2.25rem, calc(2.04rem + 1.07vw), 3rem);
   --font-3: clamp(1.13rem, calc(1.02rem + 0.54vw), 1.5rem);
+  --font-4: clamp(1.25rem, calc(0.96rem + 1.43vw), 2.25rem);
   /* --- spacing --- */
   --space-0: clamp(1rem, calc(0.86rem + 0.71vw), 1.5rem);
   --space-1: clamp(1.5rem, calc(1.29rem + 1.07vw), 2.25rem);
@@ -483,6 +484,9 @@ h2{
 h3{
     font-size: var(--font-3);
 }
+h4{
+  font-size: var(--font-4);
+}
 
 /* ---------------------------------- */
 /*               4.HERO                */
@@ -500,7 +504,7 @@ h3{
 
 .hero{
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(22rem, 1fr) );
     gap: var(--space-1);
     padding: var(--space-1) 0 var(--space-8);
     align-items: center;
@@ -552,12 +556,12 @@ h3{
   flex-wrap: wrap;
   background-color: #fff;
   gap: 1rem;
-  flex: 1;
   width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 12px;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
-  padding: 1.5rem 0;
-    border-radius: 12px;
 }
 .search img{
 
@@ -707,19 +711,33 @@ label.field.focused .psuedo_select ul {
   background-color: var(--color-green);
   color: #fff;
   border-radius: 12px;
+  align-self: center;
 
 }
-
-
-
-
-
-
 
 .hero--achive{
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-0);
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width:var(--space-10);
+}
+
+
+
+.box h4{
+  color: #fff;
+    margin-bottom: 0;
+}
+
+.box svg{
+  width: var(--space-2);
+  height: var(--space-2);
 }
 
 
@@ -796,6 +814,42 @@ label.field.focused .psuedo_select ul {
 
 
 /* --- MEDIA QUIRE FOR MOBILE MENU -- */
+@media (max-width:450px){
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+  }
+
+  .hero--achive{
+    
+  }
+
+  .search{
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    max-width: 360px;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 900px) {
   #menuToggle {
     display: block;
@@ -944,3 +998,5 @@ label.field.focused .psuedo_select ul {
 
 
 }
+
+
