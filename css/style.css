@@ -188,6 +188,7 @@ sup {
 
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 /* Forms
@@ -512,12 +513,52 @@ h4{
 }
 
 
+
+
 .hero--img{
     width: 100%;
     height: auto;
     display: grid;
     justify-items: center;
+    position: relative;
 }
+
+.hero--img::before{
+  content: '';
+position: absolute;
+width: 714px;
+height: 713px;
+left: -384px;
+top: -293px;
+background: rgba(120, 120, 120, 0.4);
+filter: blur(212px);
+
+}
+
+.hero--img::after{
+  content: '';
+  position: absolute;
+width: 274px;
+height: 273px;
+left: 410px;
+top: 91px;
+background: rgba(187, 110, 62, 0.2);
+filter: blur(95px);
+
+}
+
+.hero--img::before:after{
+  content: '';
+  position: absolute;
+width: 288px;
+height: 287px;
+left: -132px;
+top: 685px;
+
+background: rgba(255, 255, 255, 0.12);
+filter: blur(120px);
+}
+
 
 .hero--img img{
     width: 75%;
@@ -774,13 +815,126 @@ label.field.focused .psuedo_select ul {
 
 
 
+/* ---------------------------------- */
+/*             6.FEATURED             */
+/* ---------------------------------- */
+
+#featured{
+  background-color: var(--color-black);
+  padding: var(--space-5) 0 var(--space-5);
+  background-image: url(../img/Featured/BG.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.fea--p{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    color: var(--color-green);
+}
 
 
 
+.fea--title{
+display: flex;
+align-items: center;
+padding-bottom: var(--space-4);
+
+}
+
+.fea--title h2{
+  margin: 0px;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+
+.fea--title a{
+  margin-left: auto ;
+}
 
 
+.fea--content{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: var(--space-1);
+}
 
 
+.fea--box {
+  position: relative;
+  background-color: var(--color-black);
+  border-radius: 14px;
+}
+
+.fea--box p{
+  color: #fff;
+}
+
+.fea--info{
+  padding: 1.6rem 1.5rem;
+}
+
+p.loc--mark{
+  color: #fff;
+  padding-left: 2rem;
+}
+
+.loc--mark::before{
+  content: '';
+  background-image: url(../img/Featured/loc.svg);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  left: 1.5rem;
+}
+
+p.fea--details{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.fea--booking{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fea--booking a{
+    padding: 1.25rem 2rem 1.25rem 2rem;
+    background-color: var(--color-green);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.fea--booking p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+a.outline-btn{
+  background-color: unset;
+  border: 2px solid var(--color-green);
+  color: var(--color-green);
+}
 
 /* ---------------------------------- */
 /*             MEDIA QUIRE            */
@@ -832,6 +986,10 @@ label.field.focused .psuedo_select ul {
     max-width: 360px;
 
   }
+
+  label.field{
+    flex: 1;
+  }
 }
 
 
@@ -859,8 +1017,6 @@ label.field.focused .psuedo_select ul {
     user-select: none;
   }
 
-
-
   .nav--link:hover {
     color: var(--color-green);
   }
@@ -875,7 +1031,6 @@ label.field.focused .psuedo_select ul {
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
-
     -webkit-touch-callout: none;
   }
 
@@ -912,9 +1067,6 @@ label.field.focused .psuedo_select ul {
   }
 
   .logo {
-    /* position: absolute;
-    left: 165%;
-    top: -4.2rem */
     display: none;
   }
 
@@ -994,6 +1146,20 @@ label.field.focused .psuedo_select ul {
   -webkit-filter: blur(0);
 
 }
+/* -------- MOBILE MENU ENDS -------- */
+
+
+
+
+label.field {
+  flex: 1;
+}
+
+.box{
+  flex: 1;
+}
+/* -------------- HERO Ends -------------- */
+
 
 
 
