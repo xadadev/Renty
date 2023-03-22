@@ -5,23 +5,33 @@ Author: Muhammad wahab aka XADA
 Url:https://xada.netlify.app
 File Description : Main css file
  
-=================================================
-Table of Contents
-=================================================
-1. Reset
-2. Root
+/* ############################################ */
+/*               TABLE OF CONTENTS              */
+/* ############################################ */
+/* 
+1. Reset // LINK :33
+2. Root   // LINK :437
     2.1 font-size
     2.2 color
     2.3 spacing
-3. fonts
-4. Hero 
-    4.1 SEARCH LABEL
-5. Header
+3. fonts // LINK :479
+4. Header // LINK :498
+5. Hero // LINK :530
+    5.1 SEARCH LABEL
+6.  Featured // LINK :804
+7.  Services // LINK :933
+8.  WHY US   // LINK :979
+9.  HOMES   // LINK :1080
+    9.1 SPLIDER
+10. FAQ // LINK :1195
+11.  FOOTER // LINK :1313 
+12.  MEDIA QUIRES // LINK :1467  
+    12.1 TABLET MEDIA QUIRES   
+    12.2 MOBILE MEDIA QUIRES 
 
 
 
-
- */
+  */
 /* ---------------------------------- */
 /*               1.REST               */
 /* ---------------------------------- */
@@ -430,12 +440,12 @@ select:active {
 /*              2.ROOT                */
 /* ---------------------------------- */
 :root {
-  /* --- font-size --- */
+  /* --- 2.1 font-size --- */
   --font-1: clamp(2.75rem, calc(2.36rem + 1.96vw), 4.13rem);
   --font-2: clamp(2.25rem, calc(2.04rem + 1.07vw), 3rem);
   --font-3: clamp(1.13rem, calc(1.02rem + 0.54vw), 1.5rem);
   --font-4: clamp(1.25rem, calc(0.96rem + 1.43vw), 2.25rem);
-  /* --- spacing --- */
+  /* --- 2.2 spacing --- */
   --space-0: clamp(1rem, calc(0.86rem + 0.71vw), 1.5rem);
   --space-1: clamp(1.5rem, calc(1.29rem + 1.07vw), 2.25rem);
   --space-2: clamp(2rem, calc(1.71rem + 1.43vw), 3rem);
@@ -457,7 +467,7 @@ select:active {
   --space-18: clamp(10rem, calc(8.57rem + 7.14vw), 15rem);
   --step-0: clamp(2.25rem, calc(1.82rem + 2.14vw), 3.75rem);
   --step-1: clamp(1.63rem, calc(1.34rem + 1.43vw), 2.63rem);
-  /* -------- color ------ */
+  /* -------- 2.3 color ------ */
   --color-green: #1fab71;
   --color-blue: #4573fd;
   --color-black: #161617;
@@ -488,7 +498,36 @@ h4 {
 }
 
 /* ---------------------------------- */
-/*               4.HERO                */
+/*             4.HEADER               */
+/* ---------------------------------- */
+
+.nav--ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2.5rem;
+  padding: 1.8rem 0 1.8rem;
+}
+.nav--ul a:nth-child(4) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav--link {
+  color: #fff;
+}
+
+.brand {
+  display: none;
+}
+
+#menuToggle input {
+  display: none;
+}
+
+/* ---------------------------------- */
+/*               5.HERO                */
 /* ---------------------------------- */
 
 #hero {
@@ -573,6 +612,8 @@ h4 {
   font-weight: 400;
   font-size: 1rem;
   color: var(--shade-grey-1);
+  max-width: 44ch;
+  line-height: 1.5;
 }
 
 .hero--content h2 {
@@ -599,7 +640,7 @@ h4 {
 }
 
 /* ---------------------------------- */
-/*        4.1 SEARCH LABEL            */
+/*        5.1 SEARCH LABEL            */
 /* ---------------------------------- */
 
 * {
@@ -730,7 +771,7 @@ label.field.focused .psuedo_select ul {
   pointer-events: all;
 }
 
-/* --------------- END -------------- */
+/* ---------------SEARCH LABEL END -------------- */
 .search--btn {
   padding: 1rem 1.5rem;
   background-color: var(--color-green);
@@ -763,36 +804,7 @@ label.field.focused .psuedo_select ul {
 }
 
 /* ---------------------------------- */
-/*             5.HEADER               */
-/* ---------------------------------- */
-
-.nav--ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 2.5rem;
-  padding: 1.8rem 0 1.8rem;
-}
-.nav--ul a:nth-child(4) {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nav--link {
-  color: #fff;
-}
-
-.brand {
-  display: none;
-}
-
-#menuToggle input {
-  display: none;
-}
-
-/* ---------------------------------- */
-/*             6.FEATURED             */
+/*        6.FEATURED                  */
 /* ---------------------------------- */
 
 #featured {
@@ -921,7 +933,7 @@ a.outline-btn {
 }
 
 /* ---------------------------------- */
-/*         7. SERVICES ENDS           */
+/*         7. SERVICES                */
 /* ---------------------------------- */
 
 #services {
@@ -1100,7 +1112,7 @@ p.ser--p {
   margin-top: 0.5rem;
 }
 
-/* ------------- SPLIDER ------------ */
+/* -------------9.1 SPLIDER ------------ */
 .splide__list {
   align-items: flex-start;
 }
@@ -1141,18 +1153,6 @@ p.ser--p {
 
 figcaption {
   opacity: 0;
-  /* transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s; */
-}
-figure {
-  /* transition: all 1s ease-in-out;
-  -webkit-transition: all 1.s ease-in-out;
-  -moz-transition: all 1.s ease-in-out;
-  -ms-transition: all 1.s ease-in-out;
-  -o-transition: all 1.s ease-in-out; */
 }
 
 .splide__slide img {
@@ -1194,7 +1194,7 @@ figure {
 }
 
 /* ---------------------------------- */
-/*                 FAQ                */
+/*               10.FAQ                */
 /* ---------------------------------- */
 #faq {
   background-color: var(--shade-black-1);
@@ -1278,7 +1278,6 @@ button {
   border-radius: var(--border-radius);
   display: flex;
   flex-wrap: wrap;
-  /* margin: 0px auto 0px var(--space-4); */
   width: 90%;
 }
 .accordion__header[aria-expanded="true"] {
@@ -1312,7 +1311,7 @@ button {
 }
 
 /* ---------------------------------- */
-/*               FOOTER               */
+/*            11.FOOTER               */
 /* ---------------------------------- */
 #footer {
   background-color: var(--color-black);
@@ -1465,11 +1464,11 @@ form button {
 }
 
 /* ---------------------------------- */
-/*             MEDIA QUIRE            */
+/*            12. MEDIA QUIRE         */
 /* ---------------------------------- */
 
 /* ---------------------------------- */
-/*         TABLET MEDIA QUIRES        */
+/*    12.1 TABLET MEDIA QUIRES        */
 /* ---------------------------------- */
 @media (max-width: 900px) {
   #menuToggle {
@@ -1622,7 +1621,9 @@ form button {
     flex: 1;
   }
   /* -------------- HERO Ends -------------- */
-
+  /* ---------------------------------- */
+  /*             Featured               */
+  /* ---------------------------------- */
   #featured {
     background-size: cover;
   }
@@ -1647,14 +1648,10 @@ form button {
   .footer--content {
     gap: 3rem;
   }
-
-  /* ------------ FEATURED Ends ------------ */
-
-  /* ------------ SERVICES Ends ------------ */
 }
 
 /* ---------------------------------- */
-/*         MOBILE MEDIA QUIRES        */
+/*   12.2  MOBILE MEDIA QUIRES        */
 /* ---------------------------------- */
 @media (max-width: 450px) {
   .hero {

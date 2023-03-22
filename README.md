@@ -6,9 +6,7 @@ Renty is a single static landing page for a fictional real estate company. It is
 
 ## Screenshots
 
-![Renty Screenshot](https://imgur.com/6QXKeRS) 
-
-- https://imgur.com/6QXKeRS
+![App Screenshot](https://imgur.com/a/dZFyXxJ)
 
 
 ## Technologies Used
@@ -40,12 +38,34 @@ Renty is a single static landing page for a fictional real estate company. It is
 
 - Footer section with links to social media pages.
 
+## Table of content
+
+
+1. Reset 
+2. Root  
+#
+    2.1 font-size
+    2.2 color
+    2.3 spacing
+3. Fonts 
+4. Header 
+5. Hero 
+#
+    5.1 SEARCH LABEL
+6.  FEATURED 
+7.  SERVICES 
+8.  WHY US   
+9.  HOMES  
+#
+    9.1 SPLIDER
+10. FAQ 
+11.  FOOTER 
+12.  MEDIA QUIRES 
+#
+    12.1 TABLET MEDIA QUIRES   
+    12.2 MOBILE MEDIA QUIRES 
+
 ## Demo
 
-Insert gif or link to demo
+https://renty-app.netlify.app/
 
-
-## Credits
-
-- The design was created from Figma (https://uihut.com/all/Free-Real-Estate-Landing-Page-Renty/19769).
-- The property images and testimonials are stock photos from Unsplash.
