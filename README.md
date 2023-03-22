@@ -6,7 +6,9 @@ Renty is a single static landing page for a fictional real estate company. It is
 
 ## Screenshots
 
-![App Screenshot](https://imgur.com/a/dZFyXxJ)
+![Renty Screenshot](https://imgur.com/6QXKeRS) 
+
+- https://imgur.com/6QXKeRS
 
 
 ## Technologies Used
