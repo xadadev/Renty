@@ -44,8 +44,9 @@ Renty is a single static landing page for a fictional real estate company. It is
 
 
 1. Reset 
-2. Root  
 #
+2. Root  
+
     2.1 font-size
     2.2 color
     2.3 spacing
